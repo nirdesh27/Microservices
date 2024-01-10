@@ -33,7 +33,7 @@ app.post("/posts", async (req, res) => {
 
   res.status(201).send(posts[id]);
 });
-// add other events also 
+
 app.post("/events", (req, res) => {
   console.log("Received Event", req.body.type);
 
